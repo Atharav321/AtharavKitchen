@@ -1,0 +1,5 @@
+document.querySelectorAll('.menu-item button').forEach(button => {
+    button.addEventListener('click', () => {
+        alert("Order placed successfully!");
+    });
+});
