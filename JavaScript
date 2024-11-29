@@ -1,5 +1,15 @@
-document.querySelectorAll('.menu-item button').forEach(button => {
-    button.addEventListener('click', () => {
-        alert("Order placed successfully!");
+// Form submission for feedback
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you for your feedback!");
+    document.getElementById("feedbackForm").reset();  // Reset the form after submission
+});
+
+// Menu Order Button functionality
+const orderButtons = document.querySelectorAll(".order-btn");
+
+orderButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        alert("Your order has been placed! We will contact you soon.");
     });
 });

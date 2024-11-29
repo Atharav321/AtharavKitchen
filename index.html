@@ -4,35 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atharav Kitchen</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Order Now</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Atharav Kitchen</h1>
+        <p>Serving delightful homemade food</p>
     </header>
-    <section id="hero">
-        <h1>Welcome to Atharav Kitchen</h1>
-        <p>Serving your delightful days with 5-star quality food.</p>
-    </section>
-    <section id="menu">
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#feedback">Feedback</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h2>Delicious Food for Every Occasion</h2>
+        <p>Order now to experience taste and quality!</p>
+    </div>
+
+    <section class="menu-section" id="menu">
         <h2>Our Menu</h2>
-        <div class="menu-item">
-            <h3>Dish Name</h3>
-            <p>Description</p>
-            <button>Order Now</button>
+        <div class="menu">
+            <div class="menu-item">
+                <img src="https://source.unsplash.com/250x150/?veg" alt="Paneer Butter Masala">
+                <h3>Paneer Butter Masala <span class="veg">(Veg)</span></h3>
+                <p>Creamy paneer in rich gravy. ₹250</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://source.unsplash.com/250x150/?nonveg" alt="Chicken Biryani">
+                <h3>Chicken Biryani <span class="non-veg">(Non-Veg)</span></h3>
+                <p>Authentic Hyderabadi biryani. ₹350</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            <div class="menu-item">
+                <img src="https://source.unsplash.com/250x150/?food" alt="Dal Tadka">
+                <h3>Dal Tadka <span class="veg">(Veg)</span></h3>
+                <p>Classic yellow dal with spices. ₹200</p>
+                <button class="order-btn">Order Now</button>
+            </div>
         </div>
-        <!-- Add more menu items as required -->
     </section>
-    <footer>
-        <p>&copy; 2024 Atharav Kitchen. All rights reserved.</p>
+
+    <section class="feedback-section" id="feedback">
+        <h2>Feedback</h2>
+        <form id="feedbackForm">
+            <textarea placeholder="Write your feedback here..." required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Address: Shastri Nagar, Dhowatand, Bank More, Dhanbad, Jharkhand</p>
+        <p>Phone: <a href="tel:8789955393" style="color: lightblue;">8789955393</a></p>
+        <p>WhatsApp Group: <a href="https://chat.whatsapp.com/GC6L30DTE1u9Scdy1ibbO5" style="color: lightblue;">Join Here</a></p>
+        <p>UPI Payment: <strong>coolsandeepss321-3@oksbi</strong></p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
